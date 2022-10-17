@@ -32,7 +32,7 @@ class Dominos():
             self.browser.wait_until_element_is_visible('//span[contains(text(),"Entrega a Domicilio")]', timeout=timedelta(seconds=2))
             self.browser.click_element('//span[contains(text(),"Entrega a Domicilio")]')
 
-            self.browser.wait_until_element_is_visible('//label[contains(text(),"Tipo de Dirección")]', timeout=timedelta(seconds=2))
+            self.browser.wait_until_element_is_visible('//label[contains(text(),"Tipo de Dirección")]', timeout=timedelta(seconds=3))
             self.browser.click_element('//select/option[@value="House"]')
             self.browser.wait_until_element_is_visible('//select/option[@value="Lima"]', timeout=timedelta(seconds=2))
             self.browser.click_element('//select/option[@value="Lima"]')
