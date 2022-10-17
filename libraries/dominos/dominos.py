@@ -54,10 +54,10 @@ class Dominos():
         """
         log_message("Start - Create the pepperoni pizza")
         try:
-            self.browser.wait_until_element_is_visible('//h1[contains(text(), "Menú")]', timeout=timedelta(seconds=2))
+            self.browser.wait_until_element_is_visible('//h1[contains(text(), "Menú")]', timeout=timedelta(seconds=3))
             self.browser.click_element('//a[contains(text(), "Pizzas")]')
             
-            self.browser.wait_until_element_is_visible('//h1[contains(text(), "Pizza")]', timeout=timedelta(seconds=2))
+            self.browser.wait_until_element_is_visible('//h1[contains(text(), "Pizza")]', timeout=timedelta(seconds=3))
             self.browser.click_element('//a[contains(text(), "Pizzas")]')
 
             pepperoni_pizza = self.browser.find_element('//div[contains(@data-dpz-track-group,"Pizza")][descendant::a[contains(text(), "Pepperoni")]]')
