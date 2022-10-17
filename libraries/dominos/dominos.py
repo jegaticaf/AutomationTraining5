@@ -26,7 +26,7 @@ class Dominos():
         """
         log_message("Start - Go to Order Online")
         try:
-            self.browser.wait_until_element_is_visible('//a[text()="Ordena en línea"]', timeout=timedelta(seconds=1))
+            self.browser.wait_until_element_is_visible('//a[text()="Ordena en línea"]', timeout=timedelta(seconds=2))
             self.browser.click_element('//a[text()="Ordena en línea"]')
 
             self.browser.wait_until_element_is_visible('//span[contains(text(),"Entrega a Domicilio")]', timeout=timedelta(seconds=2))
