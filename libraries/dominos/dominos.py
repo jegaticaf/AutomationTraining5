@@ -119,7 +119,7 @@ class Dominos():
             self.browser.wait_until_element_is_visible('//h1[contains(text(),"También te puede gustar")]', timeout=timedelta(seconds=2))
             self.browser.click_element('//a[contains(text(),"Checkout")]')
             
-            self.browser.wait_until_element_is_visible('//h3[contains(text(),"paso 2")]', timeout=timedelta(seconds=2))
+            self.browser.wait_until_element_is_visible('//h3[contains(text(),"paso 2")]', timeout=timedelta(seconds=3))
             self.browser.click_element('//button[contains(@data-quid,"COKE")]')
 
             self.browser.wait_until_element_is_visible('//h1[contains(text(),"Coca")]', timeout=timedelta(seconds=2))
