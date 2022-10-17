@@ -74,7 +74,7 @@ class Dominos():
         """
         log_message("Start - Customize the pizza")
         try:
-            self.browser.wait_until_element_is_visible('//span[contains(text(), "Gigante")]', timeout=timedelta(seconds=2))
+            self.browser.wait_until_element_is_visible('//span[contains(text(), "Gigante")]', timeout=timedelta(seconds=3))
             self.browser.click_element('//span[contains(text(), "Gigante")]')
             self.browser.click_element('//label[contains(@for, "15")]/span[contains(text(), "Italiana")]')
             self.browser.click_element('//button[contains(text(), "Queso y Salsa")]')
@@ -112,7 +112,7 @@ class Dominos():
         """
         log_message("Start - Finish the order")
         try:
-            self.browser.wait_until_element_is_visible('//span[contains(text(), "Carrito")]', timeout=timedelta(seconds=2))
+            self.browser.wait_until_element_is_visible('//span[contains(text(), "Carrito")]', timeout=timedelta(seconds=3))
             self.browser.click_element('//span[contains(text(), "Carrito")]')
             self.browser.wait_until_element_is_visible('//span[contains(text(), "S/.")]', timeout=timedelta(seconds=5))
             self.browser.click_element('//button[@data-dpz-track-evt-name="Continuar"]')
