@@ -156,7 +156,7 @@ class Dominos():
         """
         log_message("Start - Get Order Information")
         try:
-            self.browser.wait_until_element_is_visible('//span[contains(text(),"Ver resumen")]', timeout=timedelta(seconds=5))
+            self.browser.wait_until_element_is_visible('//span[contains(text(),"Ver resumen")]', timeout=timedelta(seconds=7))
             self.browser.click_element('//span[contains(text(),"Ver resumen")]')
             element_names = self.browser.find_elements('//h3[@class="order-summary__item__title"]')
             element_quantities = self.browser.find_elements('//td[@class="qty"]')
